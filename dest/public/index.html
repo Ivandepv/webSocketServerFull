@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Login.css">
+    <title>Restful Server completed</title>
+    <meta name="google-signin-client_id" content="792196416774-ds8mvfvs7hfddsro2l3cr1m5337ii9fk.apps.googleusercontent.com">
+</head>
+<body>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <div class="father">
+
+        <!-- TODO: JWT logearse con google first. segundo con normal -->
+        <h1>Logear</h1>
+
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+        <form class="loginForm" id="loginForm">
+            <input id="emailLogin" type="email" placeholder="email" autocomplete="off" />
+            <input id="passwordLogin" type="password" placeholder="password" autocomplete="off" />
+            <button type="submit">Login</button>
+        </form>
+
+        <div id="g_id_onload"
+        data-client_id="792196416774-ds8mvfvs7hfddsro2l3cr1m5337ii9fk.apps.googleusercontent.com"
+        data-auto_prompt="false"
+        data-callback="handleCredentialResponse">
+        
+        </div>
+        <div class="g_id_signin"
+            data-type="standard"
+            data-size="large"
+            data-theme="outline"
+            data-text="sign_in_with"
+            data-shape="rectangular"
+            data-logo_alignment="left">
+        </div>
+
+        <button class= "google_signout" id="google_signout">
+            Google-Signout
+        </button>
+
+        <div class="resultados" name="" id="resultados"></div>
+    </div>
+
+
+    <script src="js/googleLogin.js"></script>
+    <script src="js/LoginNormal.js"></script>
+
+
+</body>
+</html>
