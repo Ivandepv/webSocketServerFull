@@ -4,7 +4,7 @@
 
     var url = (window.location.hostname.includes('localhost'))
     ? 'http://localhost:8080/api' 
-    : "https://restfulservercompleted.herokuapp.com/api"
+    : "https://websocketserveriv.herokuapp.com/api"
     
     // Verificacion google y normal
     // TODO signin with google and sign out cambio

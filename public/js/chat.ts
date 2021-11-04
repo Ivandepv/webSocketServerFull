@@ -19,7 +19,7 @@ let socket:any;
 (()=>{
     const url = (window.location.hostname.includes('localhost'))
     ? 'http://localhost:8080/api' 
-    : "https://restfulservercompleted.herokuapp.com/api"
+    : "https://websocketserveriv.herokuapp.com/api"
 
     // Validar el token del local storage
     const validarJWT = async()=>{
